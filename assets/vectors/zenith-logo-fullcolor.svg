@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant Gradient Definitions -->
+    <linearGradient id="grad-top-apex" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+
+    <linearGradient id="grad-z-diagonal" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+
+    <linearGradient id="grad-base-anchor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#0EA5E9" />
+    </linearGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Group Wrapper -->
+  <g transform="translate(40, 0)">
+    <!-- Zenith Apex Crest Symbol -->
+    <g filter="url(#shadow)" transform="translate(0, 0)">
+      <!-- Top Apex Chevron -->
+      <path d="M 250 90 L 380 270 H 320 L 250 170 L 180 270 H 120 Z" fill="url(#grad-top-apex)" />
+      <!-- Central Diagonal Z Blade -->
+      <path d="M 380 130 L 170 370 H 120 L 330 130 Z" fill="url(#grad-z-diagonal)" />
+      <!-- Bottom Anchor Chevron -->
+      <path d="M 250 410 L 120 230 H 180 L 250 330 L 320 230 H 380 Z" fill="url(#grad-base-anchor)" />
+    </g>
+
+    <!-- Custom Geometric Typography: ZENITH -->
+    <g fill="url(#text-grad)">
+      <!-- Z -->
+      <path d="M 480 160 H 610 V 188 L 516 292 H 610 V 320 H 480 V 292 L 574 188 H 480 Z" />
+      <!-- E -->
+      <path d="M 640 160 H 750 V 188 H 668 V 226 H 735 V 254 H 668 V 292 H 750 V 320 H 640 Z" />
+      <!-- N -->
+      <path d="M 780 160 H 808 L 882 284 V 160 H 910 V 320 H 882 L 808 196 V 320 H 780 Z" />
+      <!-- I -->
+      <path d="M 940 160 H 968 V 320 H 940 Z" />
+      <!-- T -->
+      <path d="M 998 160 H 1102 V 188 H 1064 V 320 H 1036 V 188 H 998 Z" />
+      <!-- H -->
+      <path d="M 1132 160 H 1160 V 226 H 1220 V 160 H 1248 V 320 H 1220 V 254 H 1160 V 320 H 1132 Z" />
+    </g>
+
+    <!-- Tagline Badge / Subtitle -->
+    <text x="484" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#6366F1" letter-spacing="14">CLOUD INTELLIGENCE</text>
+  </g>
+</svg>

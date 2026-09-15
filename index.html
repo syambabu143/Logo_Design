@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENITH AI · Minimalist Logo System & Brand Identity Showcase</title>
+  <meta name="description" content="Official Brand Identity, Vector Logo System, and Visual Guidelines for ZENITH AI. Minimalist logo design suite built with geometric precision.">
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Top Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand-badge">
+        <img src="assets/vectors/zenith-iconmark-fullcolor.svg" alt="ZENITH Logo Mark" class="nav-logo-icon">
+        <div class="brand-title-wrap">
+          <span class="brand-name">ZENITH<span class="brand-accent">.AI</span></span>
+          <span class="brand-sub">Brand Identity &amp; Asset Portal</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#overview" class="nav-link active"><i class="fa-solid fa-compass"></i> Overview</a>
+        <a href="#logo-viewer" class="nav-link"><i class="fa-solid fa-shapes"></i> Vector System</a>
+        <a href="#palette" class="nav-link"><i class="fa-solid fa-palette"></i> Palette</a>
+        <a href="#mockups" class="nav-link"><i class="fa-solid fa-laptop"></i> Mockups</a>
+        <a href="#downloads" class="nav-link"><i class="fa-solid fa-download"></i> Assets</a>
+        <a href="#rationale" class="nav-link"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+      </nav>
+
+      <button id="theme-toggle" class="btn-icon" title="Toggle Light/Dark Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="overview" class="hero-section">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="tag-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> TASK 2 · Logo Design Suite</div>
+        <h1 class="hero-title">Engineering Simplicity.<br/><span class="gradient-text">Architecting Innovation.</span></h1>
+        <p class="hero-desc">
+          A minimalist geometric logo system designed for <strong>ZENITH AI</strong>—a fictional next-gen cloud &amp; intelligence platform. Crafted with mathematical precision, scalable vector geometry, and golden-ratio proportions.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Vector Variants</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Infinite Scale SVG</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">1000px+</span>
+            <span class="stat-label">Transparent PNGs</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">φ 1.618</span>
+            <span class="stat-label">Golden Ratio Grid</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#logo-viewer" class="btn btn-primary"><i class="fa-solid fa-eye"></i> Explore Interactive Logo</a>
+          <a href="#downloads" class="btn btn-secondary"><i class="fa-solid fa-file-arrow-down"></i> Download Vector &amp; PNGs</a>
+        </div>
+      </div>
+
+      <div class="hero-preview-card glass-panel">
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="card-title">ZENITH Master Emblem</span>
+        </div>
+        <div class="hero-emblem-wrap">
+          <img src="assets/vectors/zenith-logo-fullcolor.svg" alt="ZENITH AI Full Color Logo" class="hero-emblem-img">
+        </div>
+        <div class="hero-card-footer">
+          <span class="badge"><i class="fa-solid fa-check"></i> 100% Vector Original</span>
+          <span class="badge"><i class="fa-solid fa-lock"></i> Master Lockup</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Vector Logo System Section -->
+  <section id="logo-viewer" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Interactive Vector Logo System</h2>
+        <p class="section-subtitle">Toggle variants, canvas backgrounds, and inspect construction geometry in real time.</p>
+      </div>
+
+      <div class="viewer-layout glass-panel">
+        <!-- Controls Bar -->
+        <div class="viewer-toolbar">
+          <div class="tool-group">
+            <span class="tool-label">Variant:</span>
+            <button class="tool-btn active" data-variant="fullcolor"><i class="fa-solid fa-circle-half-stroke"></i> Full Colour</button>
+            <button class="tool-btn" data-variant="monochrome"><i class="fa-solid fa-square"></i> Monochrome</button>
+            <button class="tool-btn" data-variant="reversed"><i class="fa-solid fa-square-full"></i> Reversed White</button>
+            <button class="tool-btn" data-variant="grid"><i class="fa-solid fa-border-top-left"></i> Blueprint Grid</button>
+          </div>
+
+          <div class="tool-group">
+            <span class="tool-label">Canvas Bg:</span>
+            <button class="bg-btn active" data-bg="dark" title="Dark Slate (#0F172A)"><span class="bg-swatch dark-swatch"></span></button>
+            <button class="bg-btn" data-bg="light" title="Light Slate (#F8FAFC)"><span class="bg-swatch light-swatch"></span></button>
+            <button class="bg-btn" data-bg="black" title="Pitch Black (#000000)"><span class="bg-swatch black-swatch"></span></button>
+            <button class="bg-btn" data-bg="transparent" title="Transparent Checkerboard"><span class="bg-swatch checker-swatch"></span></button>
+          </div>
+
+          <div class="tool-group">
+            <span class="tool-label">Lockup:</span>
+            <button class="lockup-btn active" data-lockup="full"><i class="fa-solid fa-font"></i> Full Lockup</button>
+            <button class="lockup-btn" data-lockup="mark"><i class="fa-solid fa-shapes"></i> Iconmark Only</button>
+          </div>
+        </div>
+
+        <!-- Interactive SVG Stage -->
+        <div id="svg-stage" class="svg-stage bg-dark">
+          <div class="stage-loader" id="stage-loader">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+          </div>
+          <iframe id="svg-frame" src="assets/vectors/zenith-logo-fullcolor.svg" title="Vector Logo Stage"></iframe>
+        </div>
+
+        <!-- Stage Action Controls -->
+        <div class="stage-footer">
+          <div class="asset-meta">
+            <span id="current-filename"><i class="fa-regular fa-file-code"></i> assets/vectors/zenith-logo-fullcolor.svg</span>
+            <span class="scale-tag"><i class="fa-solid fa-expand"></i> Scalable Vector (SVG)</span>
+          </div>
+
+          <div class="stage-download-btns">
+            <a id="btn-download-svg" href="assets/vectors/zenith-logo-fullcolor.svg" download class="btn btn-sm btn-outline"><i class="fa-solid fa-code"></i> Download SVG</a>
+            <a id="btn-download-png" href="assets/png/zenith-logo-fullcolor-1000x1000.png" download class="btn btn-sm btn-primary"><i class="fa-solid fa-image"></i> Download PNG (1000px)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color Palette Section -->
+  <section id="palette" class="section alt-bg">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Brand Color Palette</h2>
+        <p class="section-subtitle">A harmonious, high-contrast palette engineered for dark mode tech UI and crisp print materials.</p>
+      </div>
+
+      <div class="palette-grid">
+        <!-- Color 1 -->
+        <div class="color-card glass-panel" data-color="#6366F1">
+          <div class="color-preview" style="background: #6366F1;">
+            <span class="color-role">Primary Accent</span>
+          </div>
+          <div class="color-info">
+            <h3 class="color-name">Electric Indigo</h3>
+            <div class="color-codes">
+              <div class="code-row" onclick="copyText('#6366F1', 'Electric Indigo HEX')">
+                <span class="code-type">HEX</span>
+                <span class="code-val">#6366F1</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+              <div class="code-row" onclick="copyText('rgb(99, 102, 241)', 'Electric Indigo RGB')">
+                <span class="code-type">RGB</span>
+                <span class="code-val">99, 102, 241</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Color 2 -->
+        <div class="color-card glass-panel" data-color="#06B6D4">
+          <div class="color-preview" style="background: #06B6D4;">
+            <span class="color-role">Secondary Glow</span>
+          </div>
+          <div class="color-info">
+            <h3 class="color-name">Cyan Glow</h3>
+            <div class="color-codes">
+              <div class="code-row" onclick="copyText('#06B6D4', 'Cyan Glow HEX')">
+                <span class="code-type">HEX</span>
+                <span class="code-val">#06B6D4</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+              <div class="code-row" onclick="copyText('rgb(6, 182, 212)', 'Cyan Glow RGB')">
+                <span class="code-type">RGB</span>
+                <span class="code-val">6, 182, 212</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Color 3 -->
+        <div class="color-card glass-panel" data-color="#0F172A">
+          <div class="color-preview" style="background: #0F172A; border: 1px solid rgba(255,255,255,0.1);">
+            <span class="color-role">Deep Foundation</span>
+          </div>
+          <div class="color-info">
+            <h3 class="color-name">Deep Obsidian</h3>
+            <div class="color-codes">
+              <div class="code-row" onclick="copyText('#0F172A', 'Deep Obsidian HEX')">
+                <span class="code-type">HEX</span>
+                <span class="code-val">#0F172A</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+              <div class="code-row" onclick="copyText('rgb(15, 23, 42)', 'Deep Obsidian RGB')">
+                <span class="code-type">RGB</span>
+                <span class="code-val">15, 23, 42</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Color 4 -->
+        <div class="color-card glass-panel" data-color="#8B5CF6">
+          <div class="color-preview" style="background: #8B5CF6;">
+            <span class="color-role">Gradient Midtone</span>
+          </div>
+          <div class="color-info">
+            <h3 class="color-name">Royal Violet</h3>
+            <div class="color-codes">
+              <div class="code-row" onclick="copyText('#8B5CF6', 'Royal Violet HEX')">
+                <span class="code-type">HEX</span>
+                <span class="code-val">#8B5CF6</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+              <div class="code-row" onclick="copyText('rgb(139, 92, 246)', 'Royal Violet RGB')">
+                <span class="code-type">RGB</span>
+                <span class="code-val">139, 92, 246</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Color 5 -->
+        <div class="color-card glass-panel" data-color="#FFFFFF">
+          <div class="color-preview" style="background: #FFFFFF; border: 1px solid rgba(255,255,255,0.2);">
+            <span class="color-role" style="color: #0F172A;">Pure Light</span>
+          </div>
+          <div class="color-info">
+            <h3 class="color-name">Pure White</h3>
+            <div class="color-codes">
+              <div class="code-row" onclick="copyText('#FFFFFF', 'Pure White HEX')">
+                <span class="code-type">HEX</span>
+                <span class="code-val">#FFFFFF</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+              <div class="code-row" onclick="copyText('rgb(255, 255, 255)', 'Pure White RGB')">
+                <span class="code-type">RGB</span>
+                <span class="code-val">255, 255, 255</span>
+                <i class="fa-regular fa-copy"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Mockup Applications Gallery -->
+  <section id="mockups" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Real-World Applications</h2>
+        <p class="section-subtitle">Demonstrating logo scalability across mobile apps, dark web headers, stationery, and merchandise.</p>
+      </div>
+
+      <div class="mockup-grid">
+        <!-- Mockup 1: Dark Web Application Header -->
+        <div class="mockup-card glass-panel grid-col-2">
+          <div class="mockup-header">
+            <span class="mockup-tag"><i class="fa-solid fa-desktop"></i> Dark Web Header</span>
+          </div>
+          <div class="mockup-body web-header-mockup">
+            <div class="web-nav">
+              <img src="assets/vectors/zenith-logo-reversed.svg" alt="ZENITH Logo" class="web-nav-logo">
+              <div class="web-menu">
+                <span>Products</span>
+                <span>Solutions</span>
+                <span>Developers</span>
+                <span>Pricing</span>
+              </div>
+              <div class="web-cta">
+                <button class="mock-btn-sm">Sign In</button>
+                <button class="mock-btn-glow">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="web-hero-content">
+              <span class="hero-chip"><i class="fa-solid fa-sparkles"></i> AI Cloud Infrastructure v4.0</span>
+              <h2>Autonomous Neural Compute Engine</h2>
+              <p>Scale intelligence workloads across global edge nodes with zero latency.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mockup 2: Mobile App Splash Screen -->
+        <div class="mockup-card glass-panel">
+          <div class="mockup-header">
+            <span class="mockup-tag"><i class="fa-solid fa-mobile-screen"></i> Mobile App Icon &amp; UI</span>
+          </div>
+          <div class="mockup-body mobile-mockup">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <img src="assets/vectors/zenith-iconmark-fullcolor.svg" alt="App Icon" class="mobile-app-icon">
+                <h3>ZENITH</h3>
+                <p>Cloud AI Terminal</p>
+                <div class="phone-spinner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mockup 3: Business Card Stationery -->
+        <div class="mockup-card glass-panel">
+          <div class="mockup-header">
+            <span class="mockup-tag"><i class="fa-solid fa-id-card"></i> Minimalist Business Card</span>
+          </div>
+          <div class="mockup-body card-mockup-wrap">
+            <div class="b-card front-card">
+              <img src="assets/vectors/zenith-logo-reversed.svg" alt="Card Front" class="b-card-logo">
+            </div>
+            <div class="b-card back-card">
+              <div class="card-name">Alex Vane</div>
+              <div class="card-role">Chief Design Officer</div>
+              <div class="card-contact">alex@zenith.ai · www.zenith.ai</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mockup 4: Favicon & Tab Preview -->
+        <div class="mockup-card glass-panel">
+          <div class="mockup-header">
+            <span class="mockup-tag"><i class="fa-solid fa-globe"></i> Browser Tab &amp; Favicon</span>
+          </div>
+          <div class="mockup-body favicon-mockup-body">
+            <div class="browser-tab">
+              <img src="assets/vectors/zenith-iconmark-fullcolor.svg" class="tab-icon" alt="Favicon">
+              <span class="tab-title">ZENITH AI · Cloud Platform</span>
+              <i class="fa-solid fa-xmark tab-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Asset Download Hub Section -->
+  <section id="downloads" class="section alt-bg">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Asset Deliverables &amp; Downloads</h2>
+        <p class="section-subtitle">All required deliverables available in vector (SVG) and high-resolution transparent PNG (1000px+).</p>
+      </div>
+
+      <div class="downloads-table-wrap glass-panel">
+        <table class="downloads-table">
+          <thead>
+            <tr>
+              <th>Variant</th>
+              <th>Preview</th>
+              <th>Format</th>
+              <th>Resolution</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1 -->
+            <tr>
+              <td>
+                <strong>Full Colour Master Logo</strong>
+                <div class="table-sub">Horizontal Lockup</div>
+              </td>
+              <td>
+                <div class="table-preview bg-dark">
+                  <img src="assets/vectors/zenith-logo-fullcolor.svg" alt="Full Color Logo">
+                </div>
+              </td>
+              <td><span class="format-badge svg">SVG</span> <span class="format-badge png">PNG</span></td>
+              <td>Vector &amp; 1000×1000px</td>
+              <td class="action-cell">
+                <a href="assets/vectors/zenith-logo-fullcolor.svg" download class="btn-tbl"><i class="fa-solid fa-download"></i> SVG</a>
+                <a href="assets/png/zenith-logo-fullcolor-1000x1000.png" download class="btn-tbl btn-tbl-png"><i class="fa-solid fa-file-image"></i> PNG</a>
+              </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+              <td>
+                <strong>Monochrome Logo (Black)</strong>
+                <div class="table-sub">Single Color Print</div>
+              </td>
+              <td>
+                <div class="table-preview bg-light">
+                  <img src="assets/vectors/zenith-logo-monochrome.svg" alt="Monochrome Logo">
+                </div>
+              </td>
+              <td><span class="format-badge svg">SVG</span> <span class="format-badge png">PNG</span></td>
+              <td>Vector &amp; 1000×1000px</td>
+              <td class="action-cell">
+                <a href="assets/vectors/zenith-logo-monochrome.svg" download class="btn-tbl"><i class="fa-solid fa-download"></i> SVG</a>
+                <a href="assets/png/zenith-logo-monochrome-1000x1000.png" download class="btn-tbl btn-tbl-png"><i class="fa-solid fa-file-image"></i> PNG</a>
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+              <td>
+                <strong>Reversed White Logo</strong>
+                <div class="table-sub">Dark Backgrounds</div>
+              </td>
+              <td>
+                <div class="table-preview bg-dark">
+                  <img src="assets/vectors/zenith-logo-reversed.svg" alt="Reversed Logo">
+                </div>
+              </td>
+              <td><span class="format-badge svg">SVG</span> <span class="format-badge png">PNG</span></td>
+              <td>Vector &amp; 1000×1000px</td>
+              <td class="action-cell">
+                <a href="assets/vectors/zenith-logo-reversed.svg" download class="btn-tbl"><i class="fa-solid fa-download"></i> SVG</a>
+                <a href="assets/png/zenith-logo-reversed-1000x1000.png" download class="btn-tbl btn-tbl-png"><i class="fa-solid fa-file-image"></i> PNG</a>
+              </td>
+            </tr>
+
+            <!-- Row 4 -->
+            <tr>
+              <td>
+                <strong>Standalone Iconmark</strong>
+                <div class="table-sub">App Icon / Favicon</div>
+              </td>
+              <td>
+                <div class="table-preview bg-dark">
+                  <img src="assets/vectors/zenith-iconmark-fullcolor.svg" alt="Iconmark">
+                </div>
+              </td>
+              <td><span class="format-badge svg">SVG</span> <span class="format-badge png">PNG</span></td>
+              <td>Vector &amp; 1000×1000px</td>
+              <td class="action-cell">
+                <a href="assets/vectors/zenith-iconmark-fullcolor.svg" download class="btn-tbl"><i class="fa-solid fa-download"></i> SVG</a>
+                <a href="assets/png/zenith-iconmark-fullcolor-1000x1000.png" download class="btn-tbl btn-tbl-png"><i class="fa-solid fa-file-image"></i> PNG</a>
+              </td>
+            </tr>
+
+            <!-- Row 5 -->
+            <tr>
+              <td>
+                <strong>Blueprint Grid Diagram</strong>
+                <div class="table-sub">Construction Specs</div>
+              </td>
+              <td>
+                <div class="table-preview bg-dark">
+                  <img src="assets/vectors/zenith-logo-grid.svg" alt="Blueprint Grid">
+                </div>
+              </td>
+              <td><span class="format-badge svg">SVG</span> <span class="format-badge png">PNG</span></td>
+              <td>Vector &amp; 2000×1000px</td>
+              <td class="action-cell">
+                <a href="assets/vectors/zenith-logo-grid.svg" download class="btn-tbl"><i class="fa-solid fa-download"></i> SVG</a>
+                <a href="assets/png/zenith-logo-blueprint-2000x1000.png" download class="btn-tbl btn-tbl-png"><i class="fa-solid fa-file-image"></i> PNG</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Rationale & LinkedIn Post Copy Section -->
+  <section id="rationale" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Design Rationale &amp; LinkedIn Post</h2>
+        <p class="section-subtitle">2-3 sentence design rationale and complete social media submission post.</p>
+      </div>
+
+      <div class="rationale-grid">
+        <div class="rationale-card glass-panel">
+          <h3><i class="fa-solid fa-lightbulb gradient-text"></i> Design Philosophy &amp; Rationale</h3>
+          <p class="rationale-text">
+            <strong>ZENITH AI</strong>'s logo combines clean geometric precision with forward momentum. The emblem forms an interlocking 'Z' and upward apex peak, signifying artificial intelligence, cloud convergence, and peak performance. The electric indigo-to-cyan gradient evokes technological innovation and trust, while the minimalist construction ensures instant legibility across scale—from 16px favicons to billboard sizes.
+          </p>
+
+          <div class="checklist-card">
+            <h4><i class="fa-solid fa-list-check"></i> Requirement Verification Checklist</h4>
+            <ul>
+              <li><i class="fa-solid fa-circle-check"></i> Original logo concept — custom geometric Z-apex mark</li>
+              <li><i class="fa-solid fa-circle-check"></i> Delivered in 3 variants: Full colour, Monochrome (black), and Reversed (white)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Scalable Vector SVG source files included</li>
+              <li><i class="fa-solid fa-circle-check"></i> Minimalist KISS philosophy with golden ratio geometry</li>
+              <li><i class="fa-solid fa-circle-check"></i> Custom geometric vector typography for 'ZENITH'</li>
+              <li><i class="fa-solid fa-circle-check"></i> Exported high-res PNGs with transparent background (1000x1000px+)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="linkedin-box glass-panel">
+          <div class="linkedin-header">
+            <div class="user-info">
+              <i class="fa-brands fa-linkedin linkedin-icon"></i>
+              <div>
+                <strong>LinkedIn Post Draft</strong>
+                <span class="sub-text">Ready to share</span>
+              </div>
+            </div>
+            <button id="copy-linkedin-btn" class="btn btn-sm btn-primary"><i class="fa-regular fa-copy"></i> Copy Post Text</button>
+          </div>
+
+          <textarea id="linkedin-text" class="linkedin-textarea" readonly>
+🚀 Excited to share TASK 2: Logo Design for ZENITH AI!
+
+ZENITH AI's logo combines clean geometric precision with forward momentum. The emblem forms an interlocking 'Z' and upward apex peak, signifying artificial intelligence, cloud convergence, and peak performance. The electric indigo-to-cyan gradient evokes technological innovation and trust, while the minimalist construction ensures instant legibility across scale—from 16px favicons to billboard sizes.
+
+🎨 Highlights:
+• 100% Original Vector Concept (SVG & 1000px+ Transparent PNG)
+• Delivered in 3 variants: Full Colour, Monochrome, and Reversed
+• Custom Geometric Typography & Golden-Ratio Blueprint Grid
+
+#LogoDesign #GraphicDesign #Branding #Minimalism #VectorArt #AdobeIllustrator #Figma #DesignIdentity #ZENITHAI #AI
+          </textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <img src="assets/vectors/zenith-iconmark-fullcolor.svg" alt="ZENITH Logo" class="footer-logo">
+        <span>ZENITH AI · Minimalist Logo Design Suite</span>
+      </div>
+      <div class="footer-right">
+        <span>Built with HTML, Vanilla CSS &amp; Scalable Vector SVGs</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-check-circle"></i> <span id="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

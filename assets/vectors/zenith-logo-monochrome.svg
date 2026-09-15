@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="100%" height="100%">
+  <!-- Group Wrapper -->
+  <g transform="translate(40, 0)" fill="#000000">
+    <!-- Zenith Apex Crest Symbol (Monochrome Black) -->
+    <g transform="translate(0, 0)">
+      <!-- Top Apex Chevron -->
+      <path d="M 250 90 L 380 270 H 320 L 250 170 L 180 270 H 120 Z" />
+      <!-- Central Diagonal Z Blade -->
+      <path d="M 380 130 L 170 370 H 120 L 330 130 Z" />
+      <!-- Bottom Anchor Chevron -->
+      <path d="M 250 410 L 120 230 H 180 L 250 330 L 320 230 H 380 Z" />
+    </g>
+
+    <!-- Custom Geometric Typography: ZENITH -->
+    <g>
+      <!-- Z -->
+      <path d="M 480 160 H 610 V 188 L 516 292 H 610 V 320 H 480 V 292 L 574 188 H 480 Z" />
+      <!-- E -->
+      <path d="M 640 160 H 750 V 188 H 668 V 226 H 735 V 254 H 668 V 292 H 750 V 320 H 640 Z" />
+      <!-- N -->
+      <path d="M 780 160 H 808 L 882 284 V 160 H 910 V 320 H 882 L 808 196 V 320 H 780 Z" />
+      <!-- I -->
+      <path d="M 940 160 H 968 V 320 H 940 Z" />
+      <!-- T -->
+      <path d="M 998 160 H 1102 V 188 H 1064 V 320 H 1036 V 188 H 998 Z" />
+      <!-- H -->
+      <path d="M 1132 160 H 1160 V 226 H 1220 V 160 H 1248 V 320 H 1220 V 254 H 1160 V 320 H 1132 Z" />
+    </g>
+
+    <!-- Tagline Badge -->
+    <text x="484" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#000000" letter-spacing="14">CLOUD INTELLIGENCE</text>
+  </g>
+</svg>
